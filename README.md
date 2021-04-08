@@ -79,7 +79,10 @@ public function build()
 到 Mailtrap 檢查
 ![](https://i.imgur.com/sOKj5Lw.png)
 
-寄信花太多時間了，下一步把它丟給Queue列隊慢慢執行。
+寄信花太多時間了，下一步把它丟給Queue列隊慢慢執行
+
+
+
 ![](https://i.imgur.com/OJcrYsG.png)
 
 
@@ -123,6 +126,8 @@ redis-cli
 keys *
 ```
 有了
+
+
 ![](https://i.imgur.com/bxG84ZM.png)
 
 ## 開啟Queue
