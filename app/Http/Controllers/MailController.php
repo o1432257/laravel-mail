@@ -10,7 +10,9 @@ class MailController extends Controller
 {
     public function send()
     {
-        Mail::to('abc@abc.com')->send(new FirstMail());
+        $message = (new FirstMail())->onQueue('emails');
+        Mail::to('abc@abc.com')->queue($message);
+
         return 'check you email!!';
     }
 }
