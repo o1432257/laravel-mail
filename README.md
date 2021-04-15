@@ -155,3 +155,13 @@ $ php artisan queue:work --queue=emails
 ```
 php artisan queue:restart
 ```
+### laravel 8 遇到 Class 'Redis' not found
+
+```
+# config/database.php
+'client' => env('REDIS_CLIENT', 'predis')
+```
+安裝predis
+```
+composer require predis/predis
+```
